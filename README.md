@@ -12,7 +12,7 @@ Lets take a look inside the `src` folder
 
 - `middlewares` -> they are just going to intercept the incoming requests where we can write our validators, authenticators etc.
 
-- `controllers` -> they are kind of the last middlewares as post them you call you business layer to execute the budiness logic. In controllers we just receive the incoming requests and data and then pass it to the business layer, and once business layer returns an output, we structure the API response in controllers and send the output.
+- `controllers` -> they are kind of the last middlewares as post them you call your business layer to execute the budiness logic. In controllers we just receive the incoming requests and data and then pass it to the business layer, and once business layer returns an output, we structure the API response in controllers and send the output.
 
 - `repositories` -> this folder contains all the logic using which we interact the DB by writing queries, all the raw queries or ORM queries will go here.
 
@@ -42,7 +42,9 @@ npm install
     npx sequelize init
   ```
 - By executing the above command you will get migrations and seeders folder along with a config.json inside the config folder.
-- If you're setting up your development environment, then write the username of your db, password of your db and in dialect mention whatever db you are using for ex: mysql, mariadb etc
+
+- If you're setting up your development environment, then write the username of your db, password of your db and in dialect mention whatever db you are using for ex: mysql, mariadb etc.
+
 - If you're setting up test or prod environment, make sure you also replace the host with the hosted db url.
 
 - To run the server execute
