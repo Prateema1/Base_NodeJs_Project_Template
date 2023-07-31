@@ -20,6 +20,11 @@ Lets take a look inside the `src` folder
 
 - `utils` -> contains helper methods, error classes etc.
 
+- `seeders` -> If we want to have some set of data that is not going to change, we can include in seeders folder. This is given by sequelize-cli we used in our project.
+
+- `migrations` -> In simple terms, migrations file are used to do version controlling of our database. These are simple language scripts.
+  As we are using Nodejs and sequelize, it will be a JavaScript file. Here, we will programatically write on how to maintain versions of your database. Every version will have unique id or version. Sequelize provides us the command to create migration file.
+
 ### Setup the project
 
 - Download this template from github and open it in your favourite text editor.
