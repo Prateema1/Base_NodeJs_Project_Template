@@ -25,6 +25,9 @@ Lets take a look inside the `src` folder
 - `migrations` -> In simple terms, migrations file are used to do version controlling of our database. These are simple language scripts.
   As we are using Nodejs and sequelize, it will be a JavaScript file. Here, we will programatically write on how to maintain versions of your database. Every version will have unique id or version. Sequelize provides us the command to create migration file.
 
+  - `seeders` -> If we want to have some starter data/default data that is not going to change in the table. This puts some seed data (starting data for our table) For example:  
+    Our app has some roles like normal user, admin, seller etc. Role will be in development as well as production. So, we can create seeder file for roles where we will define the roles and run the file which will automatically populate the roles database. This way we don't have to manually to insert into.
+
 ### Setup the project
 
 - Download this template from github and open it in your favourite text editor.
